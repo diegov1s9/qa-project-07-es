@@ -13,3 +13,5 @@
 ### Observaciones
 * Si instalaste Python desde la Microsoft Store la ejecución de pruebas desde terminal seria:
     * python3.12 -m pytest .\create_kit_name_kit_test.py
+* Todas las pruebas se encuentran en archivo main.py
+* En archivo data.py se encuentra la variable {urban_routes_url} cuyo valor debe ser reemplazado por la nueva URL que generes

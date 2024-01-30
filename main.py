@@ -163,13 +163,14 @@ class UrbanRoutesPage:
     def validate_order_header_title_search_driver(self):
         #Funcion que valida el cambio del texto "buscar automóvil"
         #se obtiene el texto inicial
+        order_header_title_search_driver_local = self.order_header_title_search_driver
         text_search_car = WebDriverWait(self.driver, 22).until(
-            expected_conditions.presence_of_element_located((By.CLASS_NAME, 'order-header-title'))
+            expected_conditions.presence_of_element_located(order_header_title_search_driver_local)
         ).text
         #se espera hasta que el texto del div sea diferente
         try:
             WebDriverWait(self.driver, 22).until_not(
-                expected_conditions.text_to_be_present_in_element((By.CLASS_NAME, 'order-header-title'), text_search_car)
+                expected_conditions.text_to_be_present_in_element(order_header_title_search_driver_local, text_search_car)
             )
             return "Texto diferente"
         except Exception as e:
