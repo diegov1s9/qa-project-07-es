@@ -6,12 +6,14 @@
 ### Pruebas 
 - Necesitas tener instalado Python URL oficial *https://www.python.org/downloads/*
 - Necesitas instalar Selenium utiliza el comando pip install selenium
-- Necesitas tener instalados los paquetes pytest (pip install pytest) y request para ejecutar las pruebas (pip install requests).
+- Necesitas tener instalados los paquetes pytest (pip install pytest)
 - Agregar al path y asi quedan como variable de entorno en el SO.
 - Ejecuta todas las pruebas con el comando pytest.
 
 ### Observaciones
 * Si instalaste Python desde la Microsoft Store la ejecución de pruebas desde terminal seria:
     * python3.12 -m pytest .\create_kit_name_kit_test.py
-* Todas las pruebas se encuentran en archivo main.py
+* Todas las pruebas se encuentran en archivo TestUrbanRoutes.py
 * En archivo data.py se encuentra la variable {urban_routes_url} cuyo valor debe ser reemplazado por la nueva URL que generes
+* En archivo selector.py se encuentran los selectores utilizados en la clase UrbanRoutesPage ubicada en archivo UrbanRoutesPage.py
+* El archivo utility.py contiene función que retorna el código de confirmación de teléfono y lo devuelve como un string.
