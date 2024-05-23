@@ -13,6 +13,7 @@ class TestUrbanRoutes:
         capabilities = Options()
         capabilities.set_capability("goog:loggingPrefs", {'performance': 'ALL'})
         cls.driver = webdriver.Chrome(options=capabilities)
+        #cls.driver = webdriver.Edge() #EDGE
 
     def test_set_route(self):
         # Ejercicio Acción 1
